@@ -20,9 +20,7 @@ const entrepreneurs = [
   ];
 
 console.log("Entrepreneur dont la naissance est dans les années 70")
-let bornIn70s = entrepreneurs.filter(
-    item => item.year > 1970 && item.year < 1980
-)
+let bornIn70s = entrepreneurs.filter(item => item.year > 1970 && item.year < 1980)
 console.log(bornIn70s)
 
 console.log("Nom et prénom de chaques entrepreneurs")
@@ -40,6 +38,7 @@ let thisAge = entrepreneurs.map(item => {
     return allNamesAndAges
 })
 console.log(thisAge)
+
 
 console.log("Tri alphabétique par nom de famille")
 let byFamilyNames = entrepreneurs.sort((a, b) => a.last < b.last ? -1 : 1)

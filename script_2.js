@@ -1,4 +1,5 @@
-function factorial(number){
+function factorial(){
+    let number =  window.prompt ("quel nombre choisis-tu ?")
     var result = number;
     while(number > 1){
         number--;
@@ -7,8 +8,4 @@ function factorial(number){
     return result;
 }
 
-console.log(factorial(4));
-
-console.log(factorial(7));
-
-console.log(factorial(13));
+console.log(factorial());
